@@ -10,4 +10,4 @@ if namespaces:
     innermost_namespace_directory = os.path.join("src", *namespaces)
     os.mkdir(innermost_namespace_directory)
     # Rename the inner directory and move it into the last created directory
-    os.rename(inner_directory, os.path.join(innermost_namespace_directory, base_name))
+    os.rename(existing_inner_directory, os.path.join(innermost_namespace_directory, base_name))
